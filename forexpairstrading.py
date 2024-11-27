@@ -94,10 +94,10 @@ def audnzd_info():
     # Plot spread between NZDUSD and AUDUSD
     plt.figure(figsize=(8, 6), dpi=200)
     spread = data[b] - data[a]
-    plt.plot(spread, label = "Spread (NZDUSD - AUDUSD)")
+    plt.plot(spread, label = "Spread (AUDNZD - NZDAUD)")
     plt.axhline(spread.mean(), color='black')
     plt.legend()
-    plt.title("Spread between NZDUSD and AUDUSD")
+    plt.title("Spread between AUDUSD and NZDUSD")
     plt.show()
     
     # Plot z-scores of the spread between NZDUSD and AUDUSD
@@ -108,7 +108,7 @@ def audnzd_info():
     plt.axhline(2.0, color='red') 
     plt.axhline(-2.0, color='green') 
     plt.legend(loc = 'best')
-    plt.title("Z-scores for Spread between NZDUSD and AUDUSD")
+    plt.title("Z-scores for Spread between AUDNZD and NZDAUD")
     plt.show()
 
 if __name__ == "__main__":
